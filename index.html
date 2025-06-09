@@ -7,7 +7,6 @@
   <title>جشن</title>
 
   <link href="https://cdn.fontcdn.ir/Font/CDN/Vazir.css" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
@@ -22,6 +21,7 @@
       justify-content: center;
       height: 100vh;
       direction: rtl;
+      position: relative;
     }
 
     h1 {
@@ -53,6 +53,23 @@
       background-color: #ba4b00;
     }
 
+    .footer {
+      position: absolute;
+      bottom: 15px;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 22px;
@@ -65,13 +82,18 @@
         padding: 12px 20px;
         min-width: 180px;
       }
+
+      .footer {
+        font-size: 12px;
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
   <h1>عکس و فیلم های جشن فارغ‌التحصیلی مهندسی عمران </h1>
 
- <a href="https://drive.google.com/drive/folders/14gwrYN5nf1sKV94dlflEQxOvUIG_lx_a?usp=drive_link" class="button" target="_blank">
+  <a href="https://drive.google.com/drive/folders/14gwrYN5nf1sKV94dlflEQxOvUIG_lx_a?usp=drive_link" class="button" target="_blank">
     <i class="fa-solid fa-image"></i> عکس‌ها
   </a>
 
@@ -79,6 +101,8 @@
     <i class="fa-solid fa-film"></i> فیلم‌ها
   </a>
 
-  
+  <div class="footer">
+    <a href="mailto:contact@ariantaheri.ir">contact@ariantaheri.ir</a>
+  </div>
 </body>
 </html>
