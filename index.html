@@ -14,20 +14,27 @@
       font-family: 'Vazir', sans-serif;
       background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
       margin: 0;
-      padding: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      direction: rtl;
+      box-sizing: border-box;
+    }
+
+    .content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      direction: rtl;
-      position: relative;
     }
 
     h1 {
       color: #2c3e50;
       font-size: 28px;
       margin-bottom: 40px;
+      text-align: center;
     }
 
     .button {
@@ -54,8 +61,6 @@
     }
 
     .footer {
-      position: absolute;
-      bottom: 15px;
       font-size: 16px;
       color: #000;
       text-align: center;
@@ -73,7 +78,6 @@
     @media (max-width: 600px) {
       h1 {
         font-size: 22px;
-        text-align: center;
         padding: 0 20px;
       }
 
@@ -85,21 +89,23 @@
 
       .footer {
         font-size: 12px;
-        padding: 0 10px;
+        padding: 10px 0;
       }
     }
   </style>
 </head>
 <body>
-  <h1>عکس و فیلم های جشن فارغ‌التحصیلی مهندسی عمران </h1>
+  <div class="content">
+    <h1>عکس و فیلم های جشن فارغ‌التحصیلی مهندسی عمران</h1>
 
-  <a href="https://drive.google.com/drive/folders/14gwrYN5nf1sKV94dlflEQxOvUIG_lx_a?usp=drive_link" class="button" target="_blank">
-    <i class="fa-solid fa-image"></i> عکس‌ها
-  </a>
+    <a href="https://drive.google.com/drive/folders/14gwrYN5nf1sKV94dlflEQxOvUIG_lx_a?usp=drive_link" class="button" target="_blank">
+      <i class="fa-solid fa-image"></i> عکس‌ها
+    </a>
 
-  <a href="https://drive.google.com/drive/folders/1YE6I1FeyZcgxNZ0afgbke-whRBHNeaqz?usp=drive_link" class="button" target="_blank">
-    <i class="fa-solid fa-film"></i> فیلم‌ها
-  </a>
+    <a href="https://drive.google.com/drive/folders/1YE6I1FeyZcgxNZ0afgbke-whRBHNeaqz?usp=drive_link" class="button" target="_blank">
+      <i class="fa-solid fa-film"></i> فیلم‌ها
+    </a>
+  </div>
 
   <div class="footer">
     <a href="mailto:contact@ariantaheri.ir">contact@ariantaheri.ir</a>
